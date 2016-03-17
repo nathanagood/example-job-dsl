@@ -8,6 +8,6 @@ job('Sample Job 1') {
         scm('*/15 * * * *')
     }
     steps {
-        shell('echo \"Hello, world\" > helloworld.txt')
+        shell('echo \"Goodbye, world\" > helloworld.txt')
     }
 }
