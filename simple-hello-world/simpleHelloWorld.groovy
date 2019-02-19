@@ -1,4 +1,4 @@
-def gitUrl = 'git@github.com:nathanagood/chef-repo.git'
+def gitUrl = 'git@github.com:nathanagood/cloudformation-examples.git'
 
 job('Sample Job 1') {
     scm {
@@ -8,6 +8,6 @@ job('Sample Job 1') {
         scm('*/15 * * * *')
     }
     steps {
-        shell('echo \"Goodbye, world\" > helloworld.txt')
+        shell('echo \"Hello, world\" > helloworld.txt')
     }
 }
