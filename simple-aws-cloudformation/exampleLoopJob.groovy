@@ -3,7 +3,7 @@ def parametersBucket = ''
 
 def cloudFormationJobs = 
 [
-    [ name: 'exchange-servers' templatePath: 'example-linux-ec2.yml' parametersKeyName: 'example-linux-ec2.parameters' ]
+    [ name: 'exchange-servers', templatePath: 'example-linux-ec2.yml', parametersKeyName: 'example-linux-ec2.parameters' ]
 ]
 
 cloudFormationJobs.each {
