@@ -16,7 +16,7 @@ cloudFormationJobs.each {
             scm('*/5 * * * *')
         }
         steps {
-            shell("echo \"aws cloudformation --stack-name ${it['name']} --template-body file://${it['templatePath']} --parameters s3://${parametersBucket}/${it['parametersKeyName']}\" > ${it['name']-cmd.txt")
+            shell("echo \"aws cloudformation --stack-name ${it['name']} --template-body file://${it['templatePath']} --parameters s3://${parametersBucket}/${it['parametersKeyName']}\" > ${it['name']}-cmd.txt")
         }
     }
 }
