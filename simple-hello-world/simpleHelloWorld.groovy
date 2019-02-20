@@ -1,4 +1,4 @@
-def gitUrl = 'git@github.com:nathanagood/cloudformation-examples.git'
+def gitUrl = 'https://github.com/nathanagood/cloudformation-examples.git'
 
 job('Sample Job 1') {
     scm {
